@@ -5,3 +5,5 @@ return str.repeat(number)
 }
 console.log(drawLine(number));
 
+function 
+
