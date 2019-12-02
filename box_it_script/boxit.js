@@ -6,6 +6,13 @@ let str="━";
 for (i = 2; i < process.argv.length; i++) {
   Names.push(process.argv[i]);
 }
+//find maximum length of word 
+for (let i=0;i < Names.length;i++){
+    Namelen.push(Names[i].length);
+    if(Namelen[i] > max){
+        max = Namelen[i];   
+    } 
+ } 
 // function that takes a number as an argument that returns that number of horizontal bars
  function drawLine(number){
 return str.repeat(number)
