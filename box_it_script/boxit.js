@@ -30,3 +30,15 @@ function drawTopBorder(number){
         function drawBottomBorder(number){
             return "┗" + drawLine(number) + "┛"
             }
+
+            function drawBarsAround(arr) {
+                let i = 0;
+                for (let element of arr) {
+                  i++;
+                  string = "┃" + element.padEnd(max, " ") + "┃" ;
+                  console.log(string);
+                  if(i< arr.length){
+                      console.log(drawMiddleBorder(max));
+                  }
+                }
+              }
