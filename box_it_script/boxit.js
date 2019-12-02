@@ -1,4 +1,11 @@
+//add array from user 
+const Names=[];
+let  Namelen=[];
+let max=0;
 let str="━";
+for (i = 2; i < process.argv.length; i++) {
+  Names.push(process.argv[i]);
+}
 // function that takes a number as an argument that returns that number of horizontal bars
  function drawLine(number){
 return str.repeat(number)
