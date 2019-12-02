@@ -30,7 +30,7 @@ function drawTopBorder(number){
         function drawBottomBorder(number){
             return "┗" + drawLine(number) + "┛"
             }
-
+//it takes array and surround every element in array by character vertically
             function drawBarsAround(arr) {
                 let i = 0;
                 for (let element of arr) {
@@ -42,3 +42,7 @@ function drawTopBorder(number){
                   }
                 }
               }
+                //call function to print box around the input array   
+              console.log(drawTopBorder(max));
+                drawBarsAround(Names);
+                console.log(drawBottomBorder(max));
