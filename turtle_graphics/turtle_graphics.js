@@ -1,4 +1,4 @@
-
+//Create a Turtle class whose constructor will take two arguments (in order): x & y coordinates
 const arr=[];
 class turtle{
     constructor(x, y) {
@@ -7,19 +7,11 @@ class turtle{
     }
    
 
-    forward() {
-        this.x += this.x;
+    forward(n) {
+        this.x = this.x+n;
         this.y = this.y;
-        let output = "";
-        for (let i = 6; i < 6; i++) {
-            for (let j = 7; j < 7 ; j++) {
-                output += "*";
-            }
-            output += "\n";
-        }
-        return output
-    
     }
+}
 
     
 
